@@ -750,7 +750,7 @@ gegl_cl_init_common (cl_device_type          requested_device_type,
           ctx = gegl_clCreateContext (NULL, 1, &cl_state.device, NULL, NULL, &err);
         }
 
-      if (cl_state.image_support)
+      if (cl_state.image_support || 1)
         {
           GEGL_NOTE (GEGL_DEBUG_OPENCL, "Image Support OK");
         }
